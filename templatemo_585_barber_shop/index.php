@@ -32,7 +32,12 @@ https://templatemo.com/tm-585-barber-shop
     
     <body>
 
-    <?php require_once 'parts/header.html'; ?>
+
+
+    <?php include_once 'parts/header.html'; ?>
+
+
+
                     <section class="about-section section-padding" id="section_2">
                         <div class="container">
                             <div class="row">
@@ -381,12 +386,10 @@ https://templatemo.com/tm-585-barber-shop
                     </div>
                 </section>
 
-                <?php require_once 'parts/footer.html'; ?>
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/click-scroll.js"></script>
-        <script src="js/custom.js"></script>
+                <?php include_once 'parts/footer.html'; ?>
+
+
+
 
     </body>
 </html>
