@@ -31,10 +31,11 @@ https://templatemo.com/tm-585-barber-shop
     </head>
     
     <body>
-
-
-
     <?php include_once 'parts/header.html'; ?>
+
+
+
+
 
 
 
