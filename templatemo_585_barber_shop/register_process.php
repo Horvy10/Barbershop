@@ -22,3 +22,6 @@ if ($stmt->execute()) {
 $stmt->close();
 $mysqli->close();
 ?>
+
+<br><br>
+<a href="index.php">Späť na hlavnú stránku</a>

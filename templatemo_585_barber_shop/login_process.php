@@ -25,3 +25,6 @@ if ($stmt->num_rows === 1) {
 $stmt->close();
 $mysqli->close();
 ?>
+
+<br><br>
+<a href="index.php">Späť na hlavnú stránku</a>
