@@ -7,9 +7,9 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Gentlemen's Barber Shop - HTML CSS Template</title>
+        <title>Barbershop30</title>
 
-        <!-- CSS FILES -->        
+        <!-- CSS Súbory -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,43 +21,31 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-barber-shop.css" rel="stylesheet">
-<!--
 
-TemplateMo 585 Barber Shop
-
-https://templatemo.com/tm-585-barber-shop
-
--->
     </head>
     
     <body>
     <?php include_once 'parts/header.html'; ?>
-
-
-
-
-
-
 
                     <section class="about-section section-padding" id="section_2">
                         <div class="container">
                             <div class="row">
 
                                 <div class="col-lg-12 col-12 mx-auto">
-                                    <h2 class="mb-4">Best hairdressers</h2>
+                                    <h2 class="mb-4">Najlepší barbershop v Nitre</h2>
 
                                     <div class="border-bottom pb-3 mb-5">
-                                        <p>Gentlemen's Barber Shop is new Bootstrap v5 HTML CSS template by <a href="https://templatemo.com/page/1" target="_blank">TemplateMo</a> for everyone. There is a sidebar menu to navigate the one-page layout. You can feel free to adapt this template for your business.</p>
+                                        <p>Barbershop náš veľký sen sa stal realitou, a tak Vám s radosťou predstavujeme nový Barbershop30, ktorý je elegantne zariadený v moderno-industriálnom štýle. Nachádza sa priamo v centre mesta Nitry. </p>
                                     </div>
                                 </div>
 
-                                    <h6 class="mb-5">Meet Babers</h6>
+                                    <h6 class="mb-5">Naši barberi</h6>
 
                                         <div class="col-lg-5 col-12 custom-block-bg-overlay-wrap me-lg-5 mb-5 mb-lg-0">
                                             <img src="images/barber/portrait-male-hairdresser-with-scissors.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
 
                                             <div class="team-info d-flex align-items-center flex-wrap">
-                                                <p class="mb-0">Redo</p>
+                                                <p class="mb-0">Jojo</p>
 
                                                 <ul class="social-icon ms-auto">
                                                     <li class="social-icon-item">
@@ -82,7 +70,7 @@ https://templatemo.com/tm-585-barber-shop
                                             <img src="images/barber/portrait-mid-adult-bearded-male-barber-with-folded-arms.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
 
                                             <div class="team-info d-flex align-items-center flex-wrap">
-                                                <p class="mb-0">Sam</p>
+                                                <p class="mb-0">Kevin</p>
 
                                                 <ul class="social-icon ms-auto">
                                                     <li class="social-icon-item">
@@ -109,11 +97,11 @@ https://templatemo.com/tm-585-barber-shop
                             <div class="row">
 
                                 <div class="col-lg-10 col-12 mx-auto">
-                                    <h2 class="mb-3">Get 32% Discount</h2>
+                                    <h2 class="mb-3">Získaj 20% zľavu</h2>
 
-                                    <p>on every second week of the month</p>
+                                    <p>získaj zľavu na každý druhý strih</p></p>
 
-                                    <strong>Promo Code: BarBerMo</strong>
+                                    <strong>Promo Kód: BRB30 </strong>
                                 </div>
 
                             </div>
@@ -126,7 +114,7 @@ https://templatemo.com/tm-585-barber-shop
                             <div class="row">
 
                                 <div class="col-lg-12 col-12">
-                                    <h2 class="mb-5">Services</h2>
+                                    <h2 class="mb-5">Služby</h2>
                                 </div>
 
                                 <div class="col-lg-6 col-12 mb-4">
@@ -134,9 +122,9 @@ https://templatemo.com/tm-585-barber-shop
                                         <img src="images/services/woman-cutting-hair-man-salon.jpg" class="services-image img-fluid" alt="">
 
                                         <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Hair cut</h4>
+                                            <h4 class="mb-0">Pánsky strih</h4>
 
-                                            <strong class="services-thumb-price">$36.00</strong>
+                                            <strong class="services-thumb-price">20.00€</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -146,9 +134,9 @@ https://templatemo.com/tm-585-barber-shop
                                         <img src="images/services/hairdresser-grooming-their-client.jpg" class="services-image img-fluid" alt="">
 
                                         <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Washing</h4>
+                                            <h4 class="mb-0">Umývanie vlasov</h4>
 
-                                            <strong class="services-thumb-price">$25.00</strong>
+                                            <strong class="services-thumb-price">25.00€</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -158,9 +146,9 @@ https://templatemo.com/tm-585-barber-shop
                                         <img src="images/services/hairdresser-grooming-client.jpg" class="services-image img-fluid" alt="">
 
                                         <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Shaves</h4>
+                                            <h4 class="mb-0">Holenie</h4>
 
-                                            <strong class="services-thumb-price">$30.00</strong>
+                                            <strong class="services-thumb-price">30.00€</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -170,9 +158,9 @@ https://templatemo.com/tm-585-barber-shop
                                         <img src="images/services/boy-getting-haircut-salon-front-view.jpg" class="services-image img-fluid" alt="">
 
                                         <div class="services-info d-flex align-items-end">
-                                            <h4 class="mb-0">Kids</h4>
+                                            <h4 class="mb-0">Deti</h4>
 
-                                            <strong class="services-thumb-price">$25.00</strong>
+                                            <strong class="services-thumb-price">15.00€</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -188,20 +176,20 @@ https://templatemo.com/tm-585-barber-shop
                             <div class="col-lg-10 col-12 mx-auto">
                                 <form action="#" method="post" class="custom-form booking-form" id="bb-booking-form" role="form">
                                     <div class="text-center mb-5">
-                                        <h2 class="mb-1">Book a seat</h2>
+                                        <h2 class="mb-1">Rezervuj si termín</h2>
 
-                                        <p>Please fill out the form and we get back to you</p>
+                                        <p>Vyplň tento formulár na rezervovanie termínu</p>
                                     </div>
 
                                     <div class="booking-form-body">
                                         <div class="row">
 
                                             <div class="col-lg-6 col-12">
-                                                <input type="text" name="bb-name" id="bb-name" class="form-control" placeholder="Full name" required>
+                                                <input type="text" name="bb-name" id="bb-name" class="form-control" placeholder="Meno a priezvisko" required>
                                             </div>
 
                                             <div class="col-lg-6 col-12">
-                                                <input type="tel" class="form-control" name="bb-phone" placeholder="Mobile 010-020-0340" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                                                <input type="tel" class="form-control" name="bb-phone" placeholder="Tel.číslo 0944 020 002" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
                                             </div>
                                         
                                             <div class="col-lg-6 col-12">
@@ -210,26 +198,24 @@ https://templatemo.com/tm-585-barber-shop
 
                                             <div class="col-lg-6 col-12">
                                                 <select class="form-select form-control" name="bb-branch" id="bb-branch" aria-label="Default select example">
-                                                    <option selected="">Select Branches</option>
-                                                    <option value="Grünberger">Grünberger</option>
-                                                    <option value="Behrenstraße">Behrenstraße</option>
-                                                    <option value="Weinbergsweg">Weinbergsweg</option>
+                                                    <option selected="">Naša pobočka</option>
+                                                    <option value="Grünberger">Nitra, Mostná 30</option>
                                                 </select>
 
                                             </div>
                                             <div class="col-lg-6 col-12">
-                                                <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="Date" required>
+                                                <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="Dátum" required>
                                             </div>
 
                                             <div class="col-lg-6 col-12">
-                                                <input type="number" name="bb-number" id="bb-number" class="form-control" placeholder="Number of People" required>
+                                                <input type="number" name="bb-number" id="bb-number" class="form-control" placeholder="Počet ľudí" required>
                                             </div>
                                         </div>
 
-                                        <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Comment (Optionals)"></textarea>
+                                        <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Poznámka"></textarea>
 
                                         <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                            <button type="submit" class="form-control">Submit</button>
+                                            <button type="submit" class="form-control">Rezervovať</button>
                                         </div>
                                     </div>
                                 </form>
@@ -245,53 +231,53 @@ https://templatemo.com/tm-585-barber-shop
                                 <div class="col-lg-8 col-12">
                                     <div class="price-list-thumb-wrap">
                                         <div class="mb-4">
-                                            <h2 class="mb-2">Price List</h2>
+                                            <h2 class="mb-2">Cenník</h2>
 
-                                            <strong>Starting at $25</strong>
+                                            <strong>Začína na 15€</strong>
                                         </div>
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
-                                                Haircut
+                                                Pánsky strih
                                                 <span class="price-list-thumb-divider"></span>
 
-                                                <strong>$32.00</strong>
+                                                <strong>20.00€</strong>
                                             </h6>
                                         </div>
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
-                                                Beard Trim
+                                                Úprava brady
                                                 <span class="price-list-thumb-divider"></span>
 
-                                                <strong>$26.00</strong>
+                                                <strong>10.00€</strong>
                                             </h6>
                                         </div>
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
-                                                Razor Cut
+                                                Holenie do hladka
                                                 <span class="price-list-thumb-divider"></span>
 
-                                                <strong>$36.00</strong>
+                                                <strong>30.00€</strong>
                                             </h6>
                                         </div>
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
-                                                Shaves
+                                                Farbenie vlasov
                                                 <span class="price-list-thumb-divider"></span>
 
-                                                <strong>$30.00</strong>
+                                                <strong>30.00€</strong>
                                             </h6>
                                         </div>
 
                                         <div class="price-list-thumb">
                                             <h6 class="d-flex">
-                                                Styling / Color
+                                                Umývanie vlasov
                                                 <span class="price-list-thumb-divider"></span>
 
-                                                <strong>$25.00</strong>
+                                                <strong>25.00€</strong>
                                             </h6>
                                         </div>
                                     </div>
@@ -312,7 +298,7 @@ https://templatemo.com/tm-585-barber-shop
                             <div class="row">   
 
                                 <div class="col-lg-8 col-12 mx-auto">
-                                    <h2 class="text-center">Say hello</h2>
+                                    <h2 class="text-center">Dobrý deň(pridaj podla času pozdrav z cvičeni)</h2>
                                 </div>
                             </div>
                         </div>
@@ -323,18 +309,18 @@ https://templatemo.com/tm-585-barber-shop
                             <div class="row">
 
                                 <div class="col-lg-6 col-12">
-                                    <h5 class="mb-3"><strong>Contact</strong> Information</h5>
+                                    <h5 class="mb-3"><strong>Kontakt</strong></h5>
 
                                     <p class="text-white d-flex mb-1">
                                         <a href="tel: 120-240-3600" class="site-footer-link">
-                                            (+49) 
-                                            120-240-3600
+                                            (+421) 
+                                            944 240 002
                                         </a>
                                     </p>
 
                                     <p class="text-white d-flex">
                                         <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                            hello@barber.beauty
+                                            barbershop30@gmail.com
                                         </a>
                                     </p>
 
@@ -371,9 +357,9 @@ https://templatemo.com/tm-585-barber-shop
                                         <h6 class="mb-0">
                                             <i class="custom-icon bi-shop me-3"></i>
 
-                                            <strong>Open Daily</strong>
+                                            <strong>Otvorené Denne</strong>
 
-                                            <span class="ms-auto">10:00 AM - 8:00 PM</span>
+                                            <span class="ms-auto">10:00 - 20:00</span>
                                         </h6>
                                     </div>
                                 </div>
@@ -388,9 +374,5 @@ https://templatemo.com/tm-585-barber-shop
                 </section>
 
                 <?php include_once 'parts/footer.html'; ?>
-
-
-
-
     </body>
 </html>
