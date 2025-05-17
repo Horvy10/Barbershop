@@ -298,7 +298,17 @@
                             <div class="row">   
 
                                 <div class="col-lg-8 col-12 mx-auto">
-                                    <h2 class="text-center">Dobrý deň(pridaj podla času pozdrav z cvičeni)</h2>
+                                <?php
+                                $hour = date('H');
+
+                                if ($hour < 12) {
+                                    echo "<h3>Dobré ráno prajeme</h3>";
+                              } elseif ($hour < 18) {
+                                    echo "<h3>Dobrý deň prajeme</h3>";
+                              } else {
+                                    echo "<h3>Dobrý večer prajeme</h3>";
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>
