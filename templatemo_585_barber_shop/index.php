@@ -374,9 +374,10 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12 col-12 mx-auto mt-5 pt-5">
-                                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7702.122299518348!2d13.396786616231472!3d52.531268574169616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85180d9075183%3A0xbba8c62c3dc41a7d!2sBarbabella%20Barbershop!5e1!3m2!1sen!2sth!4v1673886261201!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
+                            <div class="col-lg-12 col-12 mx-auto mt-5 pt-5">
+                                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.513857962374!2d18.08412331564777!3d48.31234597924621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b3f9e2f1b2f2b%3A0x123456789abcdef!2sBarbershop30%2C%20Mostn%C3%A1%2030%2C%20949%2001%20Nitra%2C%20Slovensko!5e0!3m2!1ssk!2ssk!4v1680000000000!5m2!1ssk!2ssk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
 
                             </div>
                         </div>
