@@ -1,30 +1,33 @@
 <?php
-require 'db.php';
+session_start();
+require 'config.php'; // alebo db.php, ak to máš tak pomenované
 
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
 
-$stmt = $mysqli->prepare("SELECT password FROM users WHERE email = ?");
+// Získaj používateľa z databázy
+$stmt = $mysqli->prepare("SELECT id, password FROM users WHERE email = ?");
 $stmt->bind_param("s", $email);
 $stmt->execute();
-$stmt->store_result();
+$result = $stmt->get_result();
 
-if ($stmt->num_rows === 1) {
-    $stmt->bind_result($hashed_password);
-    $stmt->fetch();
+if ($result->num_rows === 1) {
+    $user = $result->fetch_assoc();
 
-    if (password_verify($password, $hashed_password)) {
-        echo "Úspešné prihlásenie!";
+    if (password_verify($password, $user['password'])) {
+        // 🔐 Uložíme ID používateľa do session
+        $_SESSION['user_id'] = $user['id'];
+
+        // 🔄 Presmerujeme do admin rozhrania
+        header("Location: admin/services.php");
+        exit;
     } else {
-        echo "Nesprávne heslo.";
+        echo "❌ Nesprávne heslo.";
     }
 } else {
-    echo "Používateľ neexistuje.";
+    echo "❌ Používateľ neexistuje.";
 }
 
 $stmt->close();
 $mysqli->close();
 ?>
-
-<br><br>
-<a href="index.php">Späť na hlavnú stránku</a>
