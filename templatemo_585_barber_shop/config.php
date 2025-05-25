@@ -11,8 +11,6 @@ if ($mysqli->connect_error) {
     die('Chyba pripojenia: (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 }
 ?>
-
-
 <!-- Takto som si vytvoril databázu cez phpMyAdmin:
  CREATE DATABASE barber_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -24,5 +22,15 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE services (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(6,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 -->
+
+
 

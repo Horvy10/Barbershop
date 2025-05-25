@@ -12,7 +12,7 @@
             <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+                <?php session_start(); ?>
             <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block sidebar collapse p-0">
 
                 <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
@@ -40,12 +40,21 @@
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_5">Kontakt</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="../templatemo_585_barber_shop/register.php">Registrácia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="../templatemo_585_barber_shop/login.php">Prihlásenie</a>
-                        </li>
+                       <?php if (isset($_SESSION['user_id'])): ?>
+    <li class="nav-item">
+        <a class="nav-link" href="../admin/services.php">Admin</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="../logout.php">Odhlásiť sa</a>
+    </li>
+<?php else: ?>
+    <li class="nav-item">
+        <a class="nav-link" href="../templatemo_585_barber_shop/register.php">Registrácia</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="../templatemo_585_barber_shop/login.php">Prihlásenie</a>
+    </li>
+<?php endif; ?>
                     </ul>
                 </div>
             </nav>
