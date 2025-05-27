@@ -19,7 +19,7 @@ if ($result->num_rows === 1) {
         $_SESSION['user_id'] = $user['id'];
 
         // 🔄 Presmerujeme do admin rozhrania
-        header("Location: admin/services.php");
+        header("Location: index.php");
         exit;
     } else {
         echo "❌ Nesprávne heslo.";

@@ -42,10 +42,10 @@
                         </li>
                        <?php if (isset($_SESSION['user_id'])): ?>
     <li class="nav-item">
-        <a class="nav-link" href="../admin/services.php">Admin</a>
+        <a class="nav-link" href="admin/services.php">Admin</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../logout.php">Odhlásiť sa</a>
+        <a class="nav-link" href="logout.php">Odhlásiť sa</a>
     </li>
 <?php else: ?>
     <li class="nav-item">

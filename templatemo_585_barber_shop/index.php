@@ -1,3 +1,10 @@
+<?php
+require_once 'config.php';
+require_once 'classes/Service.php';
+
+$service = new Service($mysqli);
+$services = $service->getAll();
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -25,7 +32,7 @@
     </head>
     
     <body>
-    <?php include_once 'parts/header.html'; ?>
+    <?php include_once 'parts/header.php'; ?>
 
                     <section class="about-section section-padding" id="section_2">
                         <div class="container">
@@ -38,6 +45,10 @@
                                         <p>Barbershop náš veľký sen sa stal realitou, a tak Vám s radosťou predstavujeme nový Barbershop30, ktorý je elegantne zariadený v moderno-industriálnom štýle. Nachádza sa priamo v centre mesta Nitry. </p>
                                     </div>
                                 </div>
+
+                                <section id="services" class="section-padding">
+                                </section>
+
 
                                     <h6 class="mb-5">Naši barberi</h6>
 
@@ -107,7 +118,6 @@
                             </div>
                         </div>
                     </section>
-
 
                     <section class="services-section section-padding" id="section_3">
                         <div class="container">
@@ -223,73 +233,40 @@
                     </div>
                 </section>
 
+                <section class="price-list-section section-padding" id="section_4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-12">
+        <div class="price-list-thumb-wrap">
+          <div class="mb-4">
+            <h2 class="mb-2">Cenník</h2>
+            <strong>Začína na 10€</strong>
+          </div>
 
-                    <section class="price-list-section section-padding" id="section_4">
-                        <div class="container">
-                            <div class="row">
+          <?php if ($services && $services->num_rows > 0): ?>
+            <?php while ($row = $services->fetch_assoc()): ?>
+              <div class="price-list-thumb">
+                <h6 class="d-flex">
+                  <?= htmlspecialchars($row['name']) ?>
+                  <span class="price-list-thumb-divider"></span>
+                  <strong><?= number_format($row['price'], 2) ?>€</strong>
+                </h6>
+              </div>
+            <?php endwhile; ?>
+          <?php else: ?>
+            <p>Žiadne služby nie sú k dispozícii.</p>
+          <?php endif; ?>
 
-                                <div class="col-lg-8 col-12">
-                                    <div class="price-list-thumb-wrap">
-                                        <div class="mb-4">
-                                            <h2 class="mb-2">Cenník</h2>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
+        <img src="images/vintage-chair-barbershop.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
-                                            <strong>Začína na 15€</strong>
-                                        </div>
 
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                Pánsky strih
-                                                <span class="price-list-thumb-divider"></span>
-
-                                                <strong>20.00€</strong>
-                                            </h6>
-                                        </div>
-
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                Úprava brady
-                                                <span class="price-list-thumb-divider"></span>
-
-                                                <strong>10.00€</strong>
-                                            </h6>
-                                        </div>
-
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                Holenie do hladka
-                                                <span class="price-list-thumb-divider"></span>
-
-                                                <strong>30.00€</strong>
-                                            </h6>
-                                        </div>
-
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                Farbenie vlasov
-                                                <span class="price-list-thumb-divider"></span>
-
-                                                <strong>30.00€</strong>
-                                            </h6>
-                                        </div>
-
-                                        <div class="price-list-thumb">
-                                            <h6 class="d-flex">
-                                                Umývanie vlasov
-                                                <span class="price-list-thumb-divider"></span>
-
-                                                <strong>25.00€</strong>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-12 custom-block-bg-overlay-wrap mt-5 mb-5 mb-lg-0 mt-lg-0 pt-3 pt-lg-0">
-                                    <img src="images/vintage-chair-barbershop.jpg" class="custom-block-bg-overlay-image img-fluid" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
 
 
                 <section class="contact-section" id="section_5">
@@ -384,6 +361,6 @@
                     </div>
                 </section>
 
-                <?php include_once 'parts/footer.html'; ?>
+                <?php include_once 'parts/footer.php'; ?>
     </body>
 </html>
