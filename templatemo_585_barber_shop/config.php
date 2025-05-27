@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db   = 'barber_app';
 $user = 'root';
-$pass = ''; 
+$pass = '';
 $charset = 'utf8mb4';
 
 $mysqli = new mysqli($host, $user, $pass, $db);

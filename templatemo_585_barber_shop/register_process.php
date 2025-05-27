@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require 'config.php';
 
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
@@ -24,4 +24,4 @@ $mysqli->close();
 ?>
 
 <br><br>
-<a href="index.php">Späť na hlavnú stránku</a>
+<a href="index.php">← Späť na hlavnú stránku</a>
