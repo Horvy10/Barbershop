@@ -1,27 +1,25 @@
 <?php
-require 'config.php';
+session_start();
+require_once 'config.php';
+require_once 'classes/User.php';
 
+$name = $_POST['name'] ?? '';
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    die('Neplatný email.');
-}
+$user = new User($mysqli);
 
-$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-$stmt = $mysqli->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
-$stmt->bind_param("ss", $email, $hashed_password);
-
-if ($stmt->execute()) {
-    echo "Registrácia bola úspešná!";
+if ($user->register($name, $email, $password)) {
+    // Registrácia úspešná
+    $_SESSION['success'] = "Registrácia prebehla úspešne. Môžete sa prihlásiť.";
+    header("Location: login.php");
+    exit;
 } else {
-    echo "Chyba: " . $stmt->error;
+    // Zlyhanie registrácie
+    $_SESSION['error'] = "Používateľ s týmto e-mailom už existuje.";
+    header("Location: register.php");
+    exit;
 }
-
-$stmt->close();
-$mysqli->close();
 ?>
-
 <br><br>
-<a href="index.php">← Späť na hlavnú stránku</a>
+<a href="register.php">Späť</a>
