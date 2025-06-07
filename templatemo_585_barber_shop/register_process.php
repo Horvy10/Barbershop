@@ -1,11 +1,17 @@
 <?php
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 require 'db.php';
 =======
+=======
+>>>>>>> Stashed changes
 require_once 'config.php';
 require_once 'classes/User.php';
 
 $user = new User($mysqli);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 $email = $_POST['email'] ?? '';

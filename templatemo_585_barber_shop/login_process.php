@@ -7,11 +7,15 @@ require_once 'config.php';
 require_once 'classes/User.php';
 
 $user = new User($mysqli);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 $stmt = $mysqli->prepare("SELECT password FROM users WHERE email = ?");
 $stmt->bind_param("s", $email);
@@ -29,6 +33,14 @@ if ($stmt->num_rows === 1) {
     }
 } else {
     echo "Používateľ neexistuje.";
+=======
+if ($user->login($email, $password)) {
+    $_SESSION['user_id'] = $user->getIdByEmail($email);
+    header("Location: index.php");
+    exit;
+} else {
+    echo "Nesprávny email alebo heslo.";
+>>>>>>> Stashed changes
 =======
 if ($user->login($email, $password)) {
     $_SESSION['user_id'] = $user->getIdByEmail($email);
