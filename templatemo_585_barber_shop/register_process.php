@@ -1,27 +1,24 @@
 <?php
+<<<<<<< Updated upstream
 require 'db.php';
+=======
+require_once 'config.php';
+require_once 'classes/User.php';
+
+$user = new User($mysqli);
+>>>>>>> Stashed changes
 
 $email = $_POST['email'] ?? '';
 $password = $_POST['password'] ?? '';
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    die('Neplatný email.');
-}
-
-$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-$stmt = $mysqli->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
-$stmt->bind_param("ss", $email, $hashed_password);
-
-if ($stmt->execute()) {
-    echo "Registrácia bola úspešná!";
+if ($user->register($email, $password)) {
+    header("Location: login.php");
+    exit;
 } else {
-    echo "Chyba: " . $stmt->error;
+    echo "Registrácia zlyhala. Email už môže byť registrovaný.";
 }
-
-$stmt->close();
-$mysqli->close();
 ?>
+
 
 <br><br>
 <a href="index.php">Späť na hlavnú stránku</a>
