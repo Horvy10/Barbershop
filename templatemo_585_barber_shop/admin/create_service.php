@@ -28,3 +28,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="number" step="0.01" name="price" placeholder="Cena" required><br>
     <button type="submit">Uložiť</button>
 </form>
+<br>
