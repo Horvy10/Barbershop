@@ -13,15 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($userData) {
         $_SESSION['user_id'] = $userData['id'];
         $_SESSION['email'] = $userData['email'];
-        header("Location: index.php"); // Po prihlásení presmeruj domov
+        header("Location: index.php");
         exit;
     } else {
-        echo "Nesprávny e-mail alebo heslo.";
+        $_SESSION['error'] = "Nesprávny e-mail alebo heslo.";
+        header("Location: login.php");
+        exit;
     }
 } else {
     header("Location: login.php");
     exit;
 }
-?>
-<br><br>
-<a href="login.php">Späť</a>

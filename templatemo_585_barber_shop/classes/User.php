@@ -13,7 +13,7 @@ class User {
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            return false; // Email už existuje
+            return false; //email existuje
         }
 
         $stmt->close();
