@@ -13,7 +13,7 @@ class User {
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            return false; //email existuje
+            return false; 
         }
 
         $stmt->close();
